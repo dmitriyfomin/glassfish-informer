@@ -1,4 +1,4 @@
 # NetBeans folder
-nbproject/*
+/nbproject/*
 /build/
 /dist/
