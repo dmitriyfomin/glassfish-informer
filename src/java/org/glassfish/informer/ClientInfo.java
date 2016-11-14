@@ -25,6 +25,8 @@ public class ClientInfo extends HttpServlet {
             throws ServletException, IOException {
         /* Set up server name in HTTP header (default GlassFish) */
         response.setHeader("server", "Informer");
+        /* Set up caching */
+        response.setHeader("cache-control", "no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
         response.setContentType("text/html;charset=utf-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
