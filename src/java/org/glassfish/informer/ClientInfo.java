@@ -23,6 +23,7 @@ public class ClientInfo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        /* Set up server name in HTTP header (default GlassFish) */
         response.setHeader("server", "Informer");
         response.setContentType("text/html;charset=utf-8");
         try (PrintWriter out = response.getWriter()) {
@@ -30,7 +31,7 @@ public class ClientInfo extends HttpServlet {
             out.println(new StringBuilder("<!DOCTYPE html>"
                     + "<html>"
                     + "<head>"
-                    + "<title>Servlet ClientInfo</title>"
+                    + "<title>ClientInfo</title>"
                     + "</head>"
                     + "<body>"
                     + "<h1>Servlet ClientInfo at " + request.getContextPath() + "</h1>"
