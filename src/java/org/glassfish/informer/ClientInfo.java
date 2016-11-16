@@ -29,7 +29,6 @@ public class ClientInfo extends HttpServlet {
         response.setHeader("cache-control", "no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
         response.setContentType("text/html;charset=utf-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println(new StringBuilder("<!DOCTYPE html>"
                     + "<html>"
                     + "<head>"
