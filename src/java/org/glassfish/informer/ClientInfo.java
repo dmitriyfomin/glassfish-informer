@@ -36,7 +36,7 @@ public class ClientInfo extends HttpServlet {
                     + "</head>"
                     + "<body>"
                     + "<h1>Servlet ClientInfo at " + request.getContextPath() + "</h1><br/>"
-                    + "<h5>IP: "+ request.getRemoteAddr() + "</h1><br/>"
+                    + "<h5>IP: " + request.getRemoteAddr() + "</h1><br/>"
                     + "<h5>User-Agent: " + request.getHeader("user-agent") + "</h1><br/>"
                     + "</body>"
                     + "</html>"));
