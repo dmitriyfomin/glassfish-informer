@@ -28,8 +28,8 @@ public class ClientInfo extends HttpServlet {
         /* Set up caching */
         response.setHeader("cache-control", "no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
         response.setContentType("text/html;charset=utf-8");
-        try (PrintWriter out = response.getWriter()) {
-            out.println(new StringBuilder("<!DOCTYPE html>"
+        try (PrintWriter pw = response.getWriter()) {
+            pw.println(new StringBuilder("<!DOCTYPE html>"
                     + "<html>"
                     + "<head>"
                     + "<title>ClientInfo</title>"
